@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Noozer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="India News" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ip6-B6-hYN">
+                                <rect key="frame" x="63" y="25" width="250" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="LdE-VQ-8md"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MP0-vr-Hae">
+                                <rect key="frame" x="16" y="64" width="343" height="573"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MP0-vr-Hae" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6LO-vV-0ZQ"/>
+                            <constraint firstItem="MP0-vr-Hae" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="7g4-Wv-stP"/>
+                            <constraint firstItem="ip6-B6-hYN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="25" id="VqW-pp-o7m"/>
+                            <constraint firstItem="MP0-vr-Hae" firstAttribute="top" secondItem="ip6-B6-hYN" secondAttribute="bottom" constant="18.5" id="h2n-h9-J1s"/>
+                            <constraint firstItem="MP0-vr-Hae" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nA9-8p-33t"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MP0-vr-Hae" secondAttribute="bottom" constant="30" id="nGK-Fe-Zed"/>
+                            <constraint firstItem="MP0-vr-Hae" firstAttribute="top" secondItem="ip6-B6-hYN" secondAttribute="bottom" constant="18.5" id="uvp-IZ-ojB"/>
+                            <constraint firstItem="ip6-B6-hYN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xlX-DB-Cu3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="news" destination="MP0-vr-Hae" id="r8h-82-OyP"/>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="VjS-xf-2Mq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="148.87556221889056"/>
+        </scene>
+    </scenes>
+</document>
